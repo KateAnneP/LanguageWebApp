@@ -8,29 +8,38 @@ defineProps({
 </script>
 
 <template>
-  <div class="logo">
-      <img scr="" />
-  </div>
-    <navbar>
-        <div class="dropdown">
-            <div class="dropbtn">Sign in</div>
-        </div>
-        <div class="dropdown">
-            <button class="dropbtn">Dropdown</button>
-            <div class="dropdown-content">
-                <a href="#">Vocabulary</a>
-                <a href="#">Langauges</a>
-                <a href="#">Categories</a>
+    <div class="row">
+        <div class="col-sm-4">
+            <div id="logo">
+                <p>Logo</p>
+                <img scr="" />
             </div>
         </div>
-        <div class="dropdown">
-            <div class="dropbtn">Practise</div>
-            <div class="dropdown-content">
-                <a href="#">Write words</a>
-                <a href="#">Quiz</a>
-            </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-8">
+            <navbar>
+                <div class="dropdown">
+                    <div class="dropbtn">Sign in</div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Dropdown</button>
+                    <div class="dropdown-content">
+                        <a href="#">Vocabulary</a>
+                        <a href="#">Langauges</a>
+                        <a href="#">Categories</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <div class="dropbtn">Practise</div>
+                    <div class="dropdown-content">
+                        <a href="#">Write words</a>
+                        <a href="#">Quiz</a>
+                    </div>
+                </div>
+            </navbar>
         </div>
-    </navbar>
+    </div>
 
 </template>
 

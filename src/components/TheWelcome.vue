@@ -8,7 +8,7 @@ import SupportIcon from './icons/IconSupport.vue'
 </script>
 
 <template>
-    <div id="login_form">
+    <div class="login_form">
         <form>
             <label for="login">Login:</label>
             <input type="text" id="login" name="login" />

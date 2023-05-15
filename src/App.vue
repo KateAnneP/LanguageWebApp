@@ -4,20 +4,27 @@ import Header from "@/components/Header.vue";
 </script>
 
 <template>
-  <header-bar>
+    <div class="row">
+        <div class="col-sm-12">
+            <div id="app">
+                <nav class="navbar navbar-expand navbar-dark bg-dark">
+                    <router-link to="/" class="navbar-brand">Strona główna</router-link>
+                    <div class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <router-link to="/words" class="nav-link">Słówka</router-link>
+                        </li>
+                        <li class="nav-item">
+                            <router-link to="/words/add" class="nav-link">Dodaj słówko</router-link>
+                        </li>
+                    </div>
+                </nav>
 
-
-    <div class="wrapper">
-      <Header />
-
+                <div class="container mt-3">
+                    <router-view />
+                </div>
+            </div>
+        </div>
     </div>
-  </header-bar>
-
-  <RouterView />
-
-  <footer>
-
-  </footer>
 </template>
 
 <style scoped>
@@ -35,7 +42,6 @@ nav {
   width: 100%;
   font-size: 12px;
   text-align: center;
-  margin-top: 2rem;
 }
 
 nav a.router-link-exact-active {
@@ -75,11 +81,8 @@ nav a:first-of-type {
 
   nav {
     text-align: left;
-    margin-left: -1rem;
     font-size: 1rem;
-
     padding: 1rem 0;
-    margin-top: 1rem;
   }
 }
 </style>

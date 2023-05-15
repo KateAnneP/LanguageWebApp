@@ -8,15 +8,18 @@ import SupportIcon from './icons/IconSupport.vue'
 </script>
 
 <template>
-    <div class="login_form">
-        <form>
-            <label for="login">Login:</label>
-            <input type="text" id="login" name="login" />
-            <label for="passwd">Password:</label>
-            <input type="text" id="passwd" name="passwd" />
-            <input type="submit" id="ok" value="Sign in" />
-        </form>
-    </div>
+<!--    <div class="login_form">-->
+<!--        <form>-->
+<!--            <label for="login">Login:</label>-->
+<!--            <input type="text" id="login" name="login" />-->
+<!--            <label for="passwd">Password:</label>-->
+<!--            <input type="text" id="passwd" name="passwd" />-->
+<!--            <input type="submit" id="ok" value="Sign in" />-->
+<!--        </form>-->
+<!--    </div>-->
+
+
+
     <!--
     <WelcomeItem>
       <template #icon>

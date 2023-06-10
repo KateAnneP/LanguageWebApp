@@ -10,14 +10,6 @@ const router = createRouter({
       component: HomeView
     },
     {
-      path: '/sign_in',
-      name: 'sign_in',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/SignUpView.vue')
-    },
-    {
       path: "/words",
       name: "words",
       component: () => import('../components/WordsList.vue')
@@ -29,8 +21,53 @@ const router = createRouter({
     },
     {
       path: "/words/add",
-      name: "add",
+      name: "words-add",
       component: () => import('../components/AddWord.vue')
+    },
+    {
+      path: "/sets",
+      name: "sets",
+      component: () => import('../components/SetsList.vue')
+    },
+    {
+      path: "/sets/:id",
+      name: "sets-details",
+      component: () => import('../components/Set.vue')
+    },
+    {
+      path: "/sets/add",
+      name: "sets-add",
+      component: () => import('../components/AddSet.vue')
+    },
+    {
+      path: "/languages",
+      name: "languages",
+      component: () => import('../components/LanguagesList.vue')
+    },
+    {
+      path: "/languages/:id",
+      name: "languages-details",
+      component: () => import('../components/Language.vue')
+    },
+    {
+      path: "/languages/add",
+      name: "languages-add",
+      component: () => import('../components/AddLanguage.vue')
+    },
+    {
+      path: "/categories",
+      name: "categories",
+      component: () => import('../components/CategoriesList.vue')
+    },
+    {
+      path: "/categories/:id",
+      name: "categories-details",
+      component: () => import('../components/Category.vue')
+    },
+    {
+      path: "/categories/add",
+      name: "categories-add",
+      component: () => import('../components/AddCategory.vue')
     }
   ]
 })

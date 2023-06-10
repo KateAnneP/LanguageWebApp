@@ -42,7 +42,7 @@
 </template>
 
 <script>
-import WordsDataService from "../services/WordDataService.js";
+import WordDataService from "../services/WordDataService.js";
 
 export default {
     name: "WordsList",
@@ -56,7 +56,7 @@ export default {
     },
     methods: {
         retrieveWords() {
-            WordsDataService.getAll()
+            WordDataService.getAll()
                 .then(response => {
                     this.words = response.data;
                     console.log(response.data);
@@ -78,7 +78,7 @@ export default {
         },
 
         removeAllWords() {
-            WordsDataService.deleteAll()
+            WordDataService.deleteAll()
                 .then(response => {
                     console.log(response.data);
                     this.refreshList();
@@ -89,7 +89,7 @@ export default {
         },
 
         searchWord() {
-            WordsDataService.findBySlowko(this.word)
+            WordDataService.findBySlowko(this.word)
                 .then(response => {
                     this.words = response.data;
                     this.setActiveWord(null);

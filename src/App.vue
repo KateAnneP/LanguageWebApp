@@ -17,6 +17,33 @@ import Header from "@/components/Header.vue";
                             <router-link to="/words/add" class="nav-link">Dodaj słówko</router-link>
                         </li>
                     </div>
+
+                    <div class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <router-link to="/sets" class="nav-link">Zestawy</router-link>
+                        </li>
+                        <li class="nav-item">
+                            <router-link to="/sets/add" class="nav-link">Dodaj zestaw</router-link>
+                        </li>
+                    </div>
+
+                    <div class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <router-link to="/categories" class="nav-link">Kategorie</router-link>
+                        </li>
+                        <li class="nav-item">
+                            <router-link to="/categories/add" class="nav-link">Dodaj kategorię</router-link>
+                        </li>
+                    </div>
+
+                    <div class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <router-link to="/languages" class="nav-link">Języki</router-link>
+                        </li>
+                        <li class="nav-item">
+                            <router-link to="/languages/add" class="nav-link">Dodaj język</router-link>
+                        </li>
+                    </div>
                 </nav>
 
                 <div class="container mt-3">

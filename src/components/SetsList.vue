@@ -54,7 +54,7 @@ export default {
         retrieveSets() {
             SetDataService.getAll()
                 .then(response => {
-                    this.words = response.data;
+                    this.sets = response.data;
                     console.log(response.data);
                 })
                 .catch(e => {
